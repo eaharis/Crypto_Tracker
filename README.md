@@ -1,5 +1,3 @@
-Here’s a README.md file summarizing the use cases, setup instructions, and functionality implemented so far for your project:
-
 # Crypto Tracker API and Web Application
 
 This project is a **crypto tracking platform** that provides real-time information about the top cryptocurrencies by market capitalization. The backend uses **FastAPI** to fetch and serve data from the **CoinMarketCap API**, while the frontend is built with **React** and styled using **Material UI**. 
@@ -80,17 +78,17 @@ The system supports the following features:
 #### Backend
 
 1. Clone the repository:
-   ```bash
-   git clone <repo-url>
-   cd coin_app
-   ```
+```bash
+git clone <repo-url>
+cd coin_app
+```
    
 2.	Create a virtual environment and install dependencies:
-  ```bash
-  python3 -m venv venv
-  source venv/bin/activate
-  pip install -r requirements.txt
-  ```
+```bash
+python3 -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt
+```
 
 3.	Set up environment variables:
 	•	Create a .env file in the coin_app directory:
