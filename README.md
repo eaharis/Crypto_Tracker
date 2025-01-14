@@ -112,7 +112,7 @@ uvicorn main:app --reload
 	•	Visit http://127.0.0.1:8000/ to ensure the server is running.
 	•	Visit http://127.0.0.1:8000/cryptos to fetch the latest cryptocurrency data.
 
-Frontend
+#### Frontend
 
 1.	Navigate to the coin_client folder:
 ```
@@ -129,9 +129,9 @@ npm start
 4.	Visit the frontend in your browser:
 	•	Open http://localhost:3000 to see the table of cryptocurrencies.
 
-Project Structure
+### Project Structure
 
-Backend
+#### Backend
 ```
 coin_app/
 ├── db/
@@ -148,7 +148,8 @@ coin_app/
 ├── .env                   # Environment variables
 └── requirements.txt       # Backend dependencies
 ```
-Frontend
+
+#### Frontend
 ```
 coin_client/
 ├── src/
@@ -160,19 +161,23 @@ coin_client/
 ├── package.json            # Frontend dependencies
 └── .env                    # Environment variables for React (if needed)
 ```
-Future Enhancements
-	1.	Frontend Features:
+
+### Future Enhancements
+
+1.	Frontend Features:
 	•	Add search functionality to the table.
 	•	Implement login functionality for user-specific features like portfolio tracking.
 	•	Support charts for historical price trends.
-	2.	Backend Features:
+
+2.	Backend Features:
 	•	Add endpoints for user account management.
 	•	Extend the database schema to support user portfolios.
 	•	Introduce machine learning models for crypto health analysis.
-	3.	Deployment:
+
+3.	Deployment:
 	•	Containerize the app with Docker.
 	•	Deploy the backend on AWS (e.g., ECS or Lambda) and the frontend on a static hosting service (e.g., S3 + CloudFront).
 
-License
+#### License
 
 This project is licensed under the MIT License.
