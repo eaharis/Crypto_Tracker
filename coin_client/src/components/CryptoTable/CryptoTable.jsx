@@ -101,7 +101,7 @@ function CryptoTable() {
                             <TableCell onClick={() => handleSort('price')}>
                                 <HeaderWithTooltip
                                     title="Price"
-                                    tooltip="Price is the cost of a single coin or token for a cryptocurrency. It is influenced by supply & demand, availibility, and many other factors."
+                                    tooltip="Price is the cost of a single coin or token for a cryptocurrency. It is influenced by supply & demand, availability, and many other factors."
                                     sortable
                                     sortActive={sortConfig.key === 'price'}
                                     sortDirection={sortConfig.direction}
