@@ -5,9 +5,9 @@ from datetime import datetime, timezone
 from dotenv import load_dotenv
 from sqlalchemy.dialects.postgresql import insert
 from sqlalchemy.orm import Session
-from db.session import SessionLocal
-from db.models import CryptoEntry
-from services.cmc_service import fetch_all_cryptos
+from src.db.session import SessionLocal
+from src.db.models import CryptoEntry
+from src.services.cmc_service import fetch_all_cryptos
 
 load_dotenv()
 

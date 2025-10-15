@@ -1,7 +1,9 @@
 # router/crypto_router.py
 
 from fastapi import APIRouter
-from services.data_service import crypto_cache, get_top_50
+from src.services.data_service import crypto_cache, get_top_50
+from fastapi import FastAPI
+from fastapi.responses import FileResponse
 
 crypto_router = APIRouter()
 
@@ -25,3 +27,7 @@ def get_all_cryptos():
         "count": len(crypto_cache["data"]),
         "cryptos": crypto_cache["data"]
     }
+
+@crypto_router.get("/favicon.ico", include_in_schema=False)
+async def favicon():
+    return FileResponse("static/favicon.ico")

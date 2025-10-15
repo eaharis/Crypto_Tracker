@@ -4,11 +4,11 @@ import os
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from contextlib import asynccontextmanager
-from db.session import engine
-from db.models import Base
-from scheduler.jobs import start_scheduler, stop_scheduler
-from router.crypto_router import crypto_router
-from services.data_service import update_cache_and_db
+from src.db.session import engine
+from src.db.models import Base
+from src.scheduler.jobs import start_scheduler, stop_scheduler
+from src.router.crypto_router import crypto_router
+from src.services.data_service import update_cache_and_db
 from dotenv import load_dotenv
 
 load_dotenv()

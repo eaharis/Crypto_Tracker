@@ -1,7 +1,7 @@
 # scheduler/jobs.py
 
 from apscheduler.schedulers.background import BackgroundScheduler
-from services.data_service import update_cache_and_db
+from src.services.data_service import update_cache_and_db
 
 scheduler = BackgroundScheduler()
 
